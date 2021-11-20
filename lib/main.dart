@@ -20,19 +20,46 @@ class Home extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                color: Colors.red,
-                child: const Text("Square 1"),
+                child: const Text(
+                    "Square 1",
+                  style: TextStyle(
+                    fontFamily: "Montserrat",
+                    fontWeight: FontWeight.w800
+                  ),
+                ),
                 padding: const EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(10) // use instead of BorderRadius.all(Radius.circular(20))
+                ),
               ),
               Container(
-                color: Colors.blue,
-                child: const Text("Square 2"),
+                child: const Text(
+                    "Square 2",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    fontFamily: "Montserrat"
+                  ),
+                ),
                 padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(10)
+                ),
               ),
               Container(
-                color: Colors.green,
-                child: const Text("Square 3"),
+                child: const Text(
+                    "Square 3",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontFamily: "Montserrat"
+                    ),
+                ),
                 padding: const EdgeInsets.all(30.0),
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(10)
+                ),
               )
             ],
           ),
