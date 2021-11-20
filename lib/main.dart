@@ -16,20 +16,26 @@ class Home extends StatelessWidget {
         ),
         body: Row(
             children: [
-              Container(
-                color: Colors.cyan,
-                padding: const EdgeInsets.all(30.0),
-                child: const Text('1'),
+              Expanded(
+                child: Container(
+                  color: Colors.cyan,
+                  padding: const EdgeInsets.all(30.0),
+                  child: const Text('1'),
+                ),
               ),
-              Container(
-                color: Colors.blue,
-                padding: const EdgeInsets.all(30.0),
-                child: const Text("2"),
+              Expanded(
+                child: Container(
+                  color: Colors.blue,
+                  padding: const EdgeInsets.all(30.0),
+                  child: const Text("2"),
+                ),
               ),
-              Container(
-                color: Colors.amber,
-                padding: const EdgeInsets.all(30.0),
-                child: const Text("3"),
+              Expanded(
+                child: Container(
+                  color: Colors.amber,
+                  padding: const EdgeInsets.all(30.0),
+                  child: const Text("3"),
+                ),
               ),
             ],
         ),
