@@ -14,55 +14,24 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
+        body: Row(
             children: [
               Container(
-                child: const Text(
-                    "Square 1",
-                  style: TextStyle(
-                    fontFamily: "Montserrat",
-                    fontWeight: FontWeight.w800
-                  ),
-                ),
-                padding: const EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(10) // use instead of BorderRadius.all(Radius.circular(20))
-                ),
-              ),
-              Container(
-                child: const Text(
-                    "Square 3",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w800,
-                      fontFamily: "Montserrat"
-                    ),
-                ),
+                color: Colors.cyan,
                 padding: const EdgeInsets.all(30.0),
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(10)
-                ),
+                child: const Text('1'),
               ),
               Container(
-                child: const Text(
-                    "Square 2",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    fontFamily: "Montserrat"
-                  ),
-                ),
-                padding: const EdgeInsets.all(20.0),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10)
-                ),
-              )
+                color: Colors.blue,
+                padding: const EdgeInsets.all(30.0),
+                child: const Text("2"),
+              ),
+              Container(
+                color: Colors.amber,
+                padding: const EdgeInsets.all(30.0),
+                child: const Text("3"),
+              ),
             ],
-          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
