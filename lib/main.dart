@@ -17,13 +17,22 @@ class Home extends StatelessWidget {
         body: Row(
             children: [
               Expanded(
+                flex: 3,
+                  child: Image.asset("assets/space1.jpg")
+              ),
+              Expanded(
+                flex: 1,
                 child: Container(
                   color: Colors.cyan,
                   padding: const EdgeInsets.all(30.0),
-                  child: const Text('1'),
+                  child: const Text(
+                      '1',
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
               Expanded(
+                flex: 1,
                 child: Container(
                   color: Colors.blue,
                   padding: const EdgeInsets.all(30.0),
@@ -31,10 +40,14 @@ class Home extends StatelessWidget {
                 ),
               ),
               Expanded(
+                flex: 1,
                 child: Container(
                   color: Colors.amber,
                   padding: const EdgeInsets.all(30.0),
-                  child: const Text("3"),
+                  child: const Text(
+                      "3",
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
             ],
