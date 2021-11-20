@@ -15,19 +15,23 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text("Hello, world"),
-            TextButton(
-                onPressed: (){},
-                child: const Text("Sign in"),
-              style: TextButton.styleFrom(
-                primary: Colors.black,
-              ),
+            Container(
+              color: Colors.red,
+              child: const Text("Square 1"),
+              padding: const EdgeInsets.all(10.0),
             ),
             Container(
-              child: const Text("User"),
-              color: Colors.cyan,
-              padding: const EdgeInsets.all(30),
+              color: Colors.blue,
+              child: const Text("Square 2"),
+              padding: const EdgeInsets.all(20.0),
+            ),
+            Container(
+              color: Colors.green,
+              child: const Text("Square 3"),
+              padding: const EdgeInsets.all(30.0),
             )
           ],
         ),
