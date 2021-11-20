@@ -35,20 +35,6 @@ class Home extends StatelessWidget {
               ),
               Container(
                 child: const Text(
-                    "Square 2",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    fontFamily: "Montserrat"
-                  ),
-                ),
-                padding: const EdgeInsets.all(20.0),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10)
-                ),
-              ),
-              Container(
-                child: const Text(
                     "Square 3",
                     style: TextStyle(
                       fontWeight: FontWeight.w800,
@@ -58,6 +44,20 @@ class Home extends StatelessWidget {
                 padding: const EdgeInsets.all(30.0),
                 decoration: BoxDecoration(
                   color: Colors.green,
+                  borderRadius: BorderRadius.circular(10)
+                ),
+              ),
+              Container(
+                child: const Text(
+                    "Square 2",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    fontFamily: "Montserrat"
+                  ),
+                ),
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(10)
                 ),
               )
